@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html ng-app='userProfiles'>
+	<head>
+		<title></title>
+	</head>
+	<body ng-controller='MainController'>
+		<div ng-repeat="user in users">
+		{{users}}	
+		  <h1>{{users.first_name}} {{users.last_name}}</h1>
+		  <img src="{{users.avatar}}">
+		  <hr>
+		</div>
+		{{users}}
+
+		<script src="angular.min.js"></script>
+		<script src='bootstrap-3.3.4-dist/js/bootstrap.min.js'></script>
+		<script src="app.js"></script>
+		<script src="controller.js"></script>
+		<script src="service.js"></script>
+	</body>	
+</html>
